@@ -1,0 +1,14 @@
+input, label{
+    display: block;
+    margin: 10px;
+}
+textarea{
+    margin: 10px;
+}
+
+.btn{
+    width: 100px;
+    margin: auto;
+    padding: 5px;
+
+}

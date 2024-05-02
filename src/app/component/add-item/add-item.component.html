@@ -1,0 +1,34 @@
+<form (ngSubmit)="onSubmit()" *ngIf="showAddTask">
+  <div>
+    <label for="text">Task</label>
+    <input
+      type="text"
+      [(ngModel)]="title"
+      name="Title"
+      id="text"
+      placeholder=" add text"
+    />
+  </div>
+  <div>
+    <label for="discription">Discription</label>
+    <textarea
+      id="discription"
+      rows="2 required"
+      [(ngModel)]="discription"
+      name="discription"
+    ></textarea>
+  </div>
+  <div>
+    <label for="Day">Day & Time</label>
+    <input
+      type="text"
+      [(ngModel)]="duedate"
+      name="duedate"
+      id="day"
+      placeholder="day"
+    />
+  </div>
+  <div class="btn">
+    <input type="submit" value="Save Task" />
+  </div>
+</form>
